@@ -9,7 +9,7 @@
 }
 
 .game-box-container{
-  width: 75%;
+  width: 460px;
   text-align: center;
 }
 
@@ -23,7 +23,7 @@
 .board {
   display: grid;
   grid-template-columns: repeat(auto-fill, 40px); 
-  gap: 2px;;
+  gap: 4px;;
 }
 
 

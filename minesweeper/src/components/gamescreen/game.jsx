@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import Board from './board';
+import {useNavigate} from "react-router";
 
 const Game = () => {
+
+  const nav = useNavigate()
+
   const [grid, setGrid] = useState([]);
   const [gameOver, setGameOver] = useState(false);
   const [mines, setMines] = useState(10);
@@ -121,7 +125,7 @@ const Game = () => {
   return (
     <div>
       <button onClick={initializeGame}>Reset Game</button>
-      <button>x</button>
+      <button onClick={()=>{nav("/")}}>x</button>
       <div style={{ margin: '10px 0', fontWeight: 'bold' }}>{status}</div>
       <Board grid={grid} handleCellClick={handleCellClick} />
     </div>
