@@ -10,7 +10,6 @@ function Welcome(){
                     <p>Instructions:</p>
                     <ol>
                         <li>Click to reveal a cell.</li>
-                        <li>Right-click to place a flag.</li>
                         <li>Reveal all safe cells to win.</li>
                         <li>Avoid the mines!</li>
                     </ol>

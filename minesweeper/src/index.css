@@ -1,10 +1,8 @@
 .minesweeper {
-
-
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 0px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -12,13 +10,6 @@
   width: 460px;
   text-align: center;
 }
-
-.game-header {
-  margin-bottom: 20px;
-  font-size: 24px;
-  font-weight: bold;
-}
-
 
 .board {
   display: grid;
@@ -39,36 +30,20 @@
   cursor: pointer;
   user-select: none;
   font-weight: bold;
-  transition: background-color 0.2s;
 }
 
 
 .cell.revealed {
   background-color: #e0e0e0;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
   cursor: default;
 }
 
 
 .cell.mine {
-  background-color: #ff4d4f;
-  color: white;
+  background-color: #bdbdbd;
+  color: red;
 }
-
-.cell.flagged {
-  background-color: #ffc107;
-  color: black;
-}
-
-
-.cell.revealed[data-value="1"] { color: blue; }
-.cell.revealed[data-value="2"] { color: green; }
-.cell.revealed[data-value="3"] { color: red; }
-.cell.revealed[data-value="4"] { color: navy; }
-.cell.revealed[data-value="5"] { color: maroon; }
-.cell.revealed[data-value="6"] { color: teal; }
-.cell.revealed[data-value="7"] { color: black; }
-.cell.revealed[data-value="8"] { color: gray; }
 
 body {
   margin: 0;
@@ -118,22 +93,6 @@ body {
   border-radius: 4px;
   cursor: pointer;
   margin: 2%;
-}
-
-.game-screen {
-  display: flex;
-  margin-top: 20px;
-}
-
-.sidebar {
-  margin-right: 10px;
-}
-
-.icon-btn {
-  background-color: #a2c4db;
-  border: none;
-  padding: 10px;
-  border-radius: 4px;
 }
 
 .game-box {
