@@ -1,10 +1,13 @@
+import {useNavigate} from "react-router";
+
 function Welcome(){
+    const navigate = useNavigate();
     return(
-        <div>
-            <h2>Welcome to MInesweeper.</h2>
-            <div>
-                <div>
-                    <p>Instructions.</p>
+        <div className="app-container">
+            <div className="welcome-box">
+            <h2>Welcome to Minesweeper.</h2>
+                <div className="instructions">
+                    <p>Instructions:</p>
                     <ol>
                         <li>Click to reveal a cell.</li>
                         <li>Right-click to place a flag.</li>
@@ -13,7 +16,7 @@ function Welcome(){
                     </ol>
                 </div>
             </div>
-            <button>START GAME.</button>
+            <button className="start-btn" onClick={()=>{navigate("/play")}}>START GAME.</button>
         </div>
     );
 };
