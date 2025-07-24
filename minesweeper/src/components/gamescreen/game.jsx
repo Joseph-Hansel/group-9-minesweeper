@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Board from './Board';
+import Board from './board';
 
 const Game = () => {
   const [grid, setGrid] = useState([]);
