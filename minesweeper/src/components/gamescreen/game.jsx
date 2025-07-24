@@ -110,6 +110,7 @@ const Game = ({secondsElapsed, startGame, endGame}) => {
       setGrid(newGrid);
       setGameOver(true);
       setStatus('Game Over!');
+      endGame()
       return;
     }
 
@@ -120,6 +121,7 @@ const Game = ({secondsElapsed, startGame, endGame}) => {
     if (allCellsRevealed) {
       setGameOver(true);
       setStatus('You Win!');
+      endGame()
     }
   };
 
