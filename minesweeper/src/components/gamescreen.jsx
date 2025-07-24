@@ -1,46 +1,72 @@
 import { useEffect, useState } from "react";
+import Game from "./gamescreen/game"
 
-function Game() {
-  const [secondsElapsed, setSecondsElapsed] = useState(0);
-  const [isGameActive, setIsGameActive] = useState(false); 
+
+//   const [secondsElapsed, setSecondsElapsed] = useState(0);
+//   const [isGameActive, setIsGameActive] = useState(false); 
 
   
-  useEffect(() => {
-    let timer;
-    if (isGameActive) {
-      timer = setInterval(() => {
-        setSecondsElapsed(prev => prev + 1);
-      }, 1000);
-    }
+//   useEffect(() => {
+//     let timer;
+//     if (isGameActive) {
+//       timer = setInterval(() => {
+//         setSecondsElapsed(prev => prev + 1);
+//       }, 1000);
+//     }
 
    
-    return () => clearInterval(timer);
-  }, [isGameActive]);
+//     return () => clearInterval(timer);
+//   }, [isGameActive]);
 
  
-  const startGame = () => {
-    setSecondsElapsed(0);    
-    setIsGameActive(true);    
+//   const startGame = () => {
+//     setSecondsElapsed(0);    
+//     setIsGameActive(true);    
     
-  };
+//   };
 
  
-  const endGame = () => {
-    setIsGameActive(false); 
-  };
+//   const endGame = () => {
+//     setIsGameActive(false); 
+//   };
 
-  return (
-    <div>
-      <div className="game-header">
-        <h2>Minesweeper</h2>
-        <p>⏱️ Time: {secondsElapsed}s</p>
-        <button onClick={startGame}>Start Game</button>
-      </div>
 
-     
-    </div>
-  );
-}
+function GameScreen(){
+      const [secondsElapsed, setSecondsElapsed] = useState(0);
+      const [isGameActive, setIsGameActive] = useState(false); 
 
-export default Game;
+  
+      useEffect(() => {
+        let timer;
+        if (isGameActive) {
+          timer = setInterval(() => {
+            setSecondsElapsed(prev => prev + 1);
+          }, 1000);
+        }
 
+   
+        return () => clearInterval(timer);
+      }, [isGameActive]);
+
+ 
+      const startGame = () => {
+        setSecondsElapsed(0);    
+        setIsGameActive(true);    
+    
+      };
+
+ 
+      const endGame = () => {
+        setIsGameActive(false); 
+      };
+      return(
+        <div className="game-box-container">
+            <div className="game-box">
+            <p>⏱️ Time: {secondsElapsed}s</p>
+                <Game/>
+            </div>
+        </div>
+    );
+};
+
+export default GameScreen;
