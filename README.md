@@ -6,7 +6,9 @@
 
 ### Setup.
 
-To view the game, you can either directly [visit the live page](https://group-9-minesweeper-project.vercel.app/) or enter the following commands in the terminal.
+To view the game, you can either directly [visit the live page](https://group-9-minesweeper-project.vercel.app/) or execute the following commands.
+
+###### In the terminal
 
    $git clone git@github.com:Joseph-Hansel/group-9-minesweeper.git
 
