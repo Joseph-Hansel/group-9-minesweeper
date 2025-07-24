@@ -120,8 +120,8 @@ const Game = () => {
 
   return (
     <div>
-      <h2>Minesweeper</h2>
       <button onClick={initializeGame}>Reset Game</button>
+      <button>x</button>
       <div style={{ margin: '10px 0', fontWeight: 'bold' }}>{status}</div>
       <Board grid={grid} handleCellClick={handleCellClick} />
     </div>
