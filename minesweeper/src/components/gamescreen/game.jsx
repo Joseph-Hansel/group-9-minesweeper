@@ -124,8 +124,8 @@ const Game = () => {
 
   return (
     <div>
-      <button onClick={initializeGame}>Reset Game</button>
-      <button onClick={()=>{nav("/")}}>x</button>
+      <button onClick={initializeGame}>Restart Game</button>
+      <button onClick={()=>{nav("/")}}>Exit Game</button>
       <div style={{ margin: '10px 0', fontWeight: 'bold' }}>{status}</div>
       <Board grid={grid} handleCellClick={handleCellClick} />
     </div>

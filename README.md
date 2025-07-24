@@ -1,6 +1,23 @@
+<p align="center"><a href="https://group-9-minesweeper-project.vercel.app/" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCwIdCYJnRmDUQnpDKNvY31bHNh_3NevoPjg&s" alt="minesweeper"></a></p>
+
 # Minesweeper Mini
 
 ## (Group 9 project - Phase 2 of SDF-FT14)
+
+### Setup.
+
+To view the game, you can either directly [visit the live page](https://group-9-minesweeper-project.vercel.app/) or execute the following commands.
+
+###### In the terminal
+
+   $git clone git@github.com:Joseph-Hansel/group-9-minesweeper.git
+
+   $cd minesweeper
+
+   $npm run install
+
+   $npm run dev 
+
 
 ## Overview; About the Project.
 

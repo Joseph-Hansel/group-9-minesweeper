@@ -15,7 +15,7 @@ function Welcome(){
                     </ol>
                 </div>
             </div>
-            <button className="start-btn" onClick={()=>{navigate("/play")}}>START GAME.</button>
+            <button className="start-btn" onClick={()=>{navigate("/play")}}>PLAY GAME.</button>
         </div>
     );
 };
