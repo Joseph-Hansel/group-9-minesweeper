@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Board from './board';
 import {useNavigate} from "react-router";
 
-const Game = () => {
+const Game = ({secondsElapsed, startGame, endGame}) => {
 
   const nav = useNavigate()
 
@@ -18,6 +18,7 @@ const Game = () => {
   }, []);
 
   const initializeGame = () => {
+    startGame()
     const newGrid = [];
     for (let i = 0; i < rows; i++) {
       newGrid.push([]);
