@@ -9,11 +9,11 @@
 To view the game, you can either directly [visit the live page](https://group-9-minesweeper-project.vercel.app/) or enter the following commands in the terminal.
 
 >   $git clone git@github.com:Joseph-Hansel/group-9-minesweeper.git
-
+>
 >   $cd minesweeper
-
+>
 >   $npm run install
-
+>
 >   $npm run dev 
 
 
