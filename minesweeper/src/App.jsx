@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import MineSweeper from "./components/minesweeper"
+import MineSweeper from "./components/minesweeper.jsx"
 
 function App() {
 
   return (
     <div>
-      <Minesweeper />
+      <MineSweeper />
     </div>
   );
 };
