@@ -20,7 +20,7 @@ function GameScreen(){
       }, [isGameActive]);
 
  
-      const startGame = () => {
+      const startGame = () => {cd 
         setSecondsElapsed(0);    
         setIsGameActive(true);    
     
